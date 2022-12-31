@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+
+<body>
+    <main>
+        <div class="timer"><span id="time"></span></div>
+        <div class="container">
+            <div class="players">
+                <div class="home">
+                    <h3>HOME</h3>
+                    <div class="score"><span id="home">0</span></div>
+                    <div class="player-points">
+                        <button id="three-home" type="button" onclick="incrementThreeHome(); guessLeader()">+3</button>
+                        <button id="two-home" type="button" onclick="incrementTwoHome(); guessLeader()">+2</button>
+                        <button id="one-home" type="button" onclick="incrementOneHome(); guessLeader()">+1</button>
+                    </div>
+                </div>
+                <div class="guest">
+                    <h3>GUEST</h3>
+                    <div class="score"><span id="guest">0</span></div>
+                    <div class="player-points">
+                        <button id="three-guest" type="button" onclick="incrementThreeGuest(); guessLeader()">+3</button>
+                        <button id="two-guest" type="button" onclick="incrementTwoGuest(); guessLeader()">+2</button>
+                        <button id="one-guest" type="button" onclick="incrementOneGuest(); guessLeader()">+1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

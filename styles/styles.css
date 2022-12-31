@@ -1,0 +1,94 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    height: 100vh;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+main .timer {
+    background-color: #080001;
+    color: #F94F6D;
+    border-radius: 7%;
+    position: absolute;
+    z-index: 999;
+    padding: 10px 8px;
+    font-family: CursedTimerUlil, verdana;
+}
+
+main .container {
+    display: flex;
+    padding: 0;
+    border: 5px solid #fff;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    border-radius: 7%;
+    height: 400px;
+    width: 590px;
+}
+
+main .container .players {
+    display: flex;
+    flex-flow: row wrap;
+    color: #fff;
+    width: 100%;
+}
+
+main .container .players h3 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: 0 auto 21px auto;
+}
+
+main .container .players .home,
+.guest {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 0 2rem;
+}
+
+main .container .players .score {
+    width: 160px;
+    height: 120px;
+    background-color: #080001;
+    border: 5px solid #fff;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: CursedTimerUlil, verdana;
+    font-size: 90px;
+    font-weight: 400;
+    color: #F94F6D;
+}
+
+main .container .players .player-points {
+    width: 78%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .container .players .player-points button {
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    background-color: transparent;
+    border-radius: 10%;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    font-family: CursedTimerUlil, verdana;
+}
+
+main .container .players .player-points button:hover {
+    color: #BAE6FD;
+    border: 2px solid #BAE6FD;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
